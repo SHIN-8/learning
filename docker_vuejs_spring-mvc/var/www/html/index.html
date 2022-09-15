@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/js/uikit-icons.min.js"></script>
+    <script src="/scripts/app.js" language="javascript" type="text/javascript"></script>
+    <title>index</title>
+  </head>
+  <body>
+    <div id="vue-app">
+      <div class="uk-section uk-section-small uk-section-secondary"></div>
+        <div class="uk-section uk-section-primary">
+          <div class="uk-container uk-container-small">
+            <h1 class="uk-heading-large">Message</h1>
+            <p>
+              <span uk-icon="icon: info"></span>
+              <span class="uk-text-lead">{{ message }}</span>
+            </p>
+            <p>
+              <button class="uk-button uk-button-large uk-button-primary" v-on:click="getMessage">Call</button>
+            </p>
+          </div>
+        </div>
+      <div class="uk-section uk-section-xlarge uk-section-muted"></div>
+    </div>
+  </body>
+</html>
