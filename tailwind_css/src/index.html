@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+		<link href="../dist/output.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="text-center mt-10 mb-32">
+			<p class="text-xs text-green-100">Hello Tailwind!</p>
+			<p class="text-sm text-green-200">Hello Tailwind!</p>
+			<p class="text-base text-green-300">Hello Tailwind!</p>
+			<p class="text-lg text-green-400">Hello Tailwind!</p>
+			<p class="text-xl text-green-500">Hello Tailwind!</p>
+			<p class="text-2xl text-green-600">Hello Tailwind!</p>
+			<p class="text-3xl text-green-700">Hello Tailwind!</p>
+			<p class="text-4xl text-green-800">Hello Tailwind!</p>
+			<p class="text-5xl text-green-900">Hello Tailwind!</p>
+		</div>
+
+		<div class="text-center">
+			<button class="bg-indigo-700 font-semibold text-white py-2 px-4 rounded">ボタン1</button>
+
+			<button class="bg-green-700 btn">ボタン2</button>
+
+			<button class="bg-red-700 btn2 hover:bg-blue-500">ボタン3</button>
+		</div>
+
+		<div class="block mt-5">
+			<button class="btn btn-primary">bootstrap ボタン</button>
+			<button class="py-2 px-3 bg-green-500 rounded hover:bg-red-300 focus:ring-4 focus:ring-green-500 focus:ring-opacity-50">tailwind ボタン</button>
+		</div>
+
+		<p class="bg-black max-w-xs mx-auto text-white py-4 px-12  mt-10">テキスト領域　背景が黒で文字色が白</p>
+
+		<input class="c-input m-72" placeholder="jane@example.com" />
+
+		<div class="lg:col-span-5 xl:col-span-6 flex flex-colk mt-32">
+			<div class="flex font-sans shadow-xl">
+				<div class="flex-none w-56 relative">
+					<img src="https://tailwindcss.com/_next/static/media/kids-jumper.47a06f045002a3e6ba595351a36a46eb.jpg" alt="" class="absolute inset-0 w-full h-full object-cover rounded-lg" />
+				</div>
+				<form class="flex-auto p-6">
+					<div class="flex flex-wrap">
+						<h1 class="flex-auto font-medium text-slate-900">
+							Kids Jumpsuit
+						</h1>
+						<div class="w-full flex-none mt-2 order-1 text-3xl font-bold text-violet-600">
+							$39.00
+						</div>
+						<div class="text-sm font-medium text-slate-400">
+							In stock
+						</div>
+					</div>
+					<div class="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200">
+						<div class="space-x-2 flex text-sm font-bold">
+							<label>
+								<input class="sr-only peer" name="size" type="radio" value="xs" checked />
+								<div class="w-9 h-9 rounded-full flex items-center justify-center text-violet-400 peer-checked:bg-violet-600 peer-checked:text-white">
+									XS
+								</div>
+							</label>
+							<label>
+								<input class="sr-only peer" name="size" type="radio" value="s" />
+								<div class="w-9 h-9 rounded-full flex items-center justify-center text-violet-400 peer-checked:bg-violet-600 peer-checked:text-white">
+									S
+								</div>
+							</label>
+							<label>
+								<input class="sr-only peer" name="size" type="radio" value="m" />
+								<div class="w-9 h-9 rounded-full flex items-center justify-center text-violet-400 peer-checked:bg-violet-600 peer-checked:text-white">
+									M
+								</div>
+							</label>
+							<label>
+								<input class="sr-only peer" name="size" type="radio" value="l" />
+								<div class="w-9 h-9 rounded-full flex items-center justify-center text-violet-400 peer-checked:bg-violet-600 peer-checked:text-white">
+									L
+								</div>
+							</label>
+							<label>
+								<input class="sr-only peer" name="size" type="radio" value="xl" />
+								<div class="w-9 h-9 rounded-full flex items-center justify-center text-violet-400 peer-checked:bg-violet-600 peer-checked:text-white">
+									XL
+								</div>
+							</label>
+						</div>
+					</div>
+					<div class="flex space-x-4 mb-5 text-sm font-medium">
+						<div class="flex-auto flex space-x-4">
+							<button class="h-10 px-6 font-semibold rounded-full bg-violet-600 text-white" type="submit">
+								Buy now
+							</button>
+							<button class="h-10 px-6 font-semibold rounded-full border border-slate-200 text-slate-900" type="button">
+								Add to bag
+							</button>
+						</div>
+						<button class="flex-none flex items-center justify-center w-9 h-9 rounded-full text-violet-600 bg-violet-50" type="button" aria-label="Like">
+							<svg width="20" height="20" fill="currentColor" aria-hidden="true">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+							</svg>
+						</button>
+					</div>
+					<p class="text-sm text-slate-500">
+						Free shipping on all continental US orders.
+					</p>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
