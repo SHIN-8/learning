@@ -1,0 +1,66 @@
+
+
+
+大まかな流れ
+tailwindcssとは
+
+利用方法
+記述の仕方
+
+- inlineでよくない？　レスポンシブできる
+- bootstrapと何が違うの？
+  bsはタブや折りたたみ機能でjsが含まれている。
+  複数のプロパティを含むクラスが存在する。
+  tailwindでは1つのクラスに対して1機能。
+- クラス名が長くなりすぎる applyをつかって短縮表記が可能　ただしコンパイルが必要になる。
+
+メリットやデメリット
+- デザインシステムとは相性が良い。余白やカラーなど値がある程度決まっているため、デザインの統一が図りやすい。
+- 命名規則を考える必要がない
+  ただしコンポーネントにまとめる場合には名前をつける必要はある。
+- PurgeCSSで、使ってないCSSを削除していきましょう。
+
+実際、使えるの？
+kingでは利用は難しいかも
+
+
+---
+
+
+
+npm init -y
+
+npm install -D tailwindcss
+
+npx tailwindcss init
+
+cd ~/Desktop/システム/study/0202_Tailwind_CSS
+
+npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+
+
+
+apply 設定方法
+applyの追加
+css/tailwind.css に、下記追加
+---
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+}
+---
+
+<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+  Normal-button
+</button>
+
+<button class="btn">Apply button</button>
+
+@applyは、一部レスポンシブ等classは。使えないようですので。例外はありそうです
+
+
+  </body>
+</html>
