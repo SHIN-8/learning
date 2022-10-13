@@ -1,0 +1,11 @@
+version: '3'
+services:
+  # ---- build
+  gdb:
+    build: 
+      context: ../ 
+      dockerfile: docker/centos/Dockerfile
+    container_name: gdb
+    volumes:
+      - ../src/:/home/src
+    tty: true
