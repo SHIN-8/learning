@@ -1,0 +1,18 @@
+version: '3'
+services:
+  mariadb:
+    image: yoshinorin/docker-mariadb:10.4.2
+    environment:
+      MYSQL_ROOT_PASSWORD: pass
+      MYSQL_USER: mariadb
+      MYSQL_PASSWORD: pass
+      MYSQL_DATABASE: akkaexample
+      TZ: Asia/Tokyo
+    volumes:
+      - './volumes/mariadb/data:/var/lib/mysql'
+      - './volumes/mariadb/config:/etc/mysql'
+    hostname: mariadb
+    ports:
+      - "3306:3306"
+    command: ["mysqld", "--character-set-server=utf8mb4"]
+    restart: unless-stopped
