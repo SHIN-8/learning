@@ -1,0 +1,22 @@
+version: "3.4"
+services:
+  nginx:
+    environment:
+      AWS_CONTAINER_CREDENTIALS_RELATIVE_URI: /creds
+      ECS_CONTAINER_METADATA_URI: http://169.254.170.2/v3
+    image: nginx:alpine
+    labels:
+      ecs-local.task-definition-input.type: local
+      ecs-local.task-definition-input.value: /Users/kpu0530/Project/ECS/handson/4/task-definition.json
+      test: test-fargate
+    logging:
+      driver: awslogs
+      options:
+        awslogs-group: /ecs/test-fargate
+        awslogs-region: ap-northeast-1
+        awslogs-stream-prefix: ecs
+    networks:
+      ecs-local-network: null
+networks:
+  ecs-local-network:
+    external: true

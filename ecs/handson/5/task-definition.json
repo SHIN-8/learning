@@ -1,0 +1,157 @@
+{
+    "ipcMode": null,
+    "executionRoleArn": "arn:aws:iam::597671767797:role/ecsTaskExecutionRole",
+    "containerDefinitions": [
+        {
+            "dnsSearchDomains": null,
+            "logConfiguration": null,
+            "entryPoint": null,
+            "portMappings": [
+                {
+                    "hostPort": 80,
+                    "protocol": "tcp",
+                    "containerPort": 80
+                }
+            ],
+            "command": null,
+            "linuxParameters": null,
+            "cpu": 0,
+            "environment": [],
+            "resourceRequirements": null,
+            "ulimits": null,
+            "dnsServers": null,
+            "mountPoints": [
+                {
+                    "readOnly": null,
+                    "containerPath": "/var/run",
+                    "sourceVolume": "test"
+                }
+            ],
+            "workingDirectory": null,
+            "secrets": null,
+            "dockerSecurityOptions": null,
+            "memory": 128,
+            "memoryReservation": null,
+            "volumesFrom": [],
+            "stopTimeout": null,
+            "image": "nginx:alpine",
+            "startTimeout": null,
+            "dependsOn": null,
+            "disableNetworking": null,
+            "interactive": null,
+            "healthCheck": null,
+            "essential": true,
+            "links": [],
+            "hostname": null,
+            "extraHosts": null,
+            "pseudoTerminal": null,
+            "user": null,
+            "readonlyRootFilesystem": true,
+            "dockerLabels": null,
+            "systemControls": null,
+            "privileged": null,
+            "name": "nginx"
+        },
+        {
+            "dnsSearchDomains": null,
+            "logConfiguration": null,
+            "entryPoint": null,
+            "portMappings": [],
+            "command": null,
+            "linuxParameters": null,
+            "cpu": 0,
+            "environment": [],
+            "resourceRequirements": null,
+            "ulimits": null,
+            "dnsServers": null,
+            "mountPoints": [
+                {
+                    "readOnly": null,
+                    "containerPath": "/var/run",
+                    "sourceVolume": "test"
+                }
+            ],
+            "workingDirectory": null,
+            "secrets": null,
+            "dockerSecurityOptions": null,
+            "memory": 128,
+            "memoryReservation": null,
+            "volumesFrom": [],
+            "stopTimeout": null,
+            "image": "php:7.3.4-fpm-alpine3.9",
+            "startTimeout": null,
+            "dependsOn": null,
+            "disableNetworking": null,
+            "interactive": null,
+            "healthCheck": null,
+            "essential": true,
+            "links": [],
+            "hostname": null,
+            "extraHosts": null,
+            "pseudoTerminal": null,
+            "user": null,
+            "readonlyRootFilesystem": null,
+            "dockerLabels": null,
+            "systemControls": null,
+            "privileged": null,
+            "name": "phpfpm"
+        }
+    ],
+    "placementConstraints": [],
+    "memory": null,
+    "taskRoleArn": "arn:aws:iam::597671767797:role/ecsTaskExecutionRole",
+    "compatibilities": [
+        "EC2"
+    ],
+    "taskDefinitionArn": "arn:aws:ecs:ap-northeast-1:597671767797:task-definition/handson5:4",
+    "family": "handson5",
+    "requiresAttributes": [
+        {
+            "targetId": null,
+            "targetType": null,
+            "value": null,
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.17"
+        },
+        {
+            "targetId": null,
+            "targetType": null,
+            "value": null,
+            "name": "ecs.capability.docker-plugin.local"
+        },
+        {
+            "targetId": null,
+            "targetType": null,
+            "value": null,
+            "name": "com.amazonaws.ecs.capability.task-iam-role"
+        },
+        {
+            "targetId": null,
+            "targetType": null,
+            "value": null,
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.25"
+        }
+    ],
+    "pidMode": null,
+    "requiresCompatibilities": [
+        "EC2"
+    ],
+    "networkMode": null,
+    "cpu": null,
+    "revision": 4,
+    "status": "ACTIVE",
+    "inferenceAccelerators": null,
+    "proxyConfiguration": null,
+    "volumes": [
+        {
+            "name": "test",
+            "host": null,
+            "dockerVolumeConfiguration": {
+                "autoprovision": null,
+                "labels": null,
+                "scope": "task",
+                "driver": "local",
+                "driverOpts": null
+            }
+        }
+    ]
+}

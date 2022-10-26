@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  nginx:
+    image: nginx:alpine
+    volumes:
+      - ./nginx/:/etc/nginx/conf.d
+      - storage:/var/run
+    ports:
+      - 9090:80
+    links:
+      - php-fpm
+    depends_on:
+      - php-fpm
+    command: ["nginx", "-g", "daemon off;"]
+
+  php-fpm:
+    image: php:7.3.4-fpm-alpine3.9
+    volumes: 
+      - ./php-fpm/:/var/www/test
+      - storage:/var/run
+
+volumes:
+  storage:
+    driver: local
+    
