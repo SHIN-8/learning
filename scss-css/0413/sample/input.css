@@ -1,0 +1,37 @@
+/* Sass */
+.box {
+  margin: 30px 10px;
+  width: 300px;
+  height: 100px;
+  background: #0bd; }
+
+.block {
+  background-color: #ddd; }
+
+.element {
+  background-color: #ddd; }
+
+.item {
+  background-color: #ddd; }
+
+h1 {
+  font-size: 1.5rem; }
+
+h2 {
+  font-size: 1.4rem; }
+
+h3 {
+  font-size: 1.3rem; }
+
+h4 {
+  font-size: 1.2rem; }
+
+h5 {
+  font-size: 1.1rem; }
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 30px; } }
+
+body {
+  background: #f99; }

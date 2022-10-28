@@ -1,0 +1,26 @@
+h1 {
+	margin: 30px 10px;
+	color: #0bd;
+}
+
+.sample .container {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.sample .container .box {
+	display: block;
+	margin: 30px 10px;
+	padding: 20px 40px;
+	border: 2px solid #fff;
+	background: #0bd;
+	color: #fff;
+}
+
+.sample .container .box_line {
+	display: block;
+	margin: 30px 10px;
+	padding: 20px 40px;
+	border: 2px solid #0bd;
+	color: #0bd;
+}

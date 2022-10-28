@@ -1,0 +1,11 @@
+{
+  "name": "0413",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "node-sass": "node-sass input.scss output.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,72 @@
+:root {
+	/* --変数名:値 となります */
+	--main-position: center;
+	--main-lh: 1.5;
+	--main-gutter: 30px 10px;
+	--box-color: #0bd;
+}
+
+.box {
+	/* 呼び出すときはvar(--変数名); */
+	margin: var(--main-gutter);
+	width: 300px;
+	height: 100px;
+	background: var(--box-color, red);
+	/* --box-colorが見つからなければ、red */
+}
+
+:root {
+	--bg: #f99;
+}
+@media (max-width: 600px) {
+	:root {
+		--bg: #fc6;
+	}
+}
+
+body {
+	background: var(--bg);
+}
+
+/*
+:root {
+  --main-text: #333;
+  --main-bg: #fff;
+}
+@media (max-width: 600px) {
+  :root {
+    --main-text: #ddd;
+    --main-bg: #000;
+  }
+}
+body {
+  color: var(--main-text);
+  background-color: var(--main-bg);
+  transition: .2s;
+}
+
+.wrap {
+  text-align: center;
+  padding: 2rem;
+}
+h1 {
+  font-size: 3rem;
+}
+p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+h1, p {
+  margin-bottom: 1rem;
+}
+a {
+  color: #0bd
+}
+.btn {
+  background: #0bd;
+  padding: 6px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+} */

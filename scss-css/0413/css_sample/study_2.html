@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Document</title>
+		<link rel="stylesheet" type="text/css" href="./study_2.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="./input.css" /> -->
+		<link rel="icon" href="img/favicon.png" />
+	</head>
+	<body>
+		<section class="sample">
+			<h1>Hello, world!</h1>
+			<div class="container">
+				<div class="box">item1_1</div>
+				<div class="box">item1_2</div>
+				<div class="box">item1_3</div>
+				<div class="box">item1_4</div>
+				<div class="box">item1_5</div>
+				<div class="box">item1_6</div>
+			</div>
+			<div class="container">
+				<div class="box_line">item2_1</div>
+				<div class="box_line">item2_2</div>
+				<div class="box_line">item2_3</div>
+				<div class="box_line">item2_4</div>
+				<div class="box_line">item2_5</div>
+				<div class="box_line">item2_6</div>
+			</div>
+		</section>
+	</body>
+	<script>
+		$(function () {
+			$("#light-btn, #dark-btn").click(function () {
+				$("body").toggleClass("thema-dark");
+			});
+		});
+	</script>
+</html>

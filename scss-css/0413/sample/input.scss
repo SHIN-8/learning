@@ -1,0 +1,62 @@
+/* Sass */
+// $変数名: 初期値;
+$bg-1: #ddd;
+$main-position: center;
+$main-lh: 1.5;
+$main-gutter: 30px 10px;
+$box-color: #0bd;
+
+.box {
+	margin: $main-gutter;
+	width: 300px;
+	height: 100px;
+	background: $box-color;
+}
+
+.block {
+	background-color: $bg-1; //←変数を使いまわせる
+}
+.element {
+	background-color: $bg-1;
+}
+.item {
+	background-color: $bg-1;
+}
+
+// 変数に値を入力することもできます
+$i: 1;
+
+@while $i <= 5 {
+	h#{$i} {
+		font-size: 1.6rem - (0.1rem * $i);
+	}
+	$i: $i + 1;
+}
+
+// SCSS変数
+$bg: #f99;
+
+@media (max-width: 600px) {
+	$bg: #fc6;
+	h1 {
+		font-size: 30px;
+	}
+}
+
+body {
+	background: $bg;
+}
+
+// CSS変数
+// :root {
+//   --bg: #f99;
+// }
+// @media (max-width: 600px) {
+//   :root {
+//     --bg: #fc6;
+//   }
+// }
+
+// body {
+//   background: var(--bg);
+// }
