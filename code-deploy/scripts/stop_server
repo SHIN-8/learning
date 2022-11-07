@@ -1,0 +1,7 @@
+#!/bin/bash
+docker-compose -f /home/ec2-user/code-deploy/docker/docker-compose.yml down
+
+isExistApp = `pgrep docker`
+if [[ -n  $isExistApp ]]; then
+    service docker stop
+fi
