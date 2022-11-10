@@ -1,0 +1,14 @@
+---
+name: "webhook_test"
+pack: "examples"
+description: "webhook test"
+enabled: true
+trigger:
+    type: "core.st2.webhook"
+    parameters:
+        url: "echo"
+
+action:
+    ref: "core.local"
+    parameters:
+        cmd: "echo 'hello2' >> /mnt/st2/test.log"
