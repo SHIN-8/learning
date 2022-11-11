@@ -1,0 +1,21 @@
+{
+  "name": "openapi-v3-with-redoc",
+  "version": "1.0.0",
+  "description": "Open API Example with Redoc",
+  "main": "index.js",
+  "scripts": {
+    "build:1": "./node_modules/.bin/redoc-cli bundle ./docs/v1/example1.yml -o ./dist/index1.html",
+    "build:2": "./node_modules/.bin/redoc-cli bundle ./docs/v1/example2.yml -o ./dist/index2.html",
+    "build:3": "./node_modules/.bin/redoc-cli bundle ./docs/v1/example3.yml -o ./dist/index3.html",
+    "build:4": "./node_modules/.bin/redoc-cli bundle ./docs/v1/example4.yml -o ./dist/index4.html",
+    "build:5": "./node_modules/.bin/redoc-cli bundle ./docs/v1/example5.yml -o ./dist/index5.html",
+    "build:6": "./node_modules/.bin/redoc-cli bundle ./docs/v1/example6.yml -o ./dist/index6.html",
+    "build:7": "./node_modules/.bin/redoc-cli bundle ./docs/v1/example7.yml -o ./dist/index7.html",
+    "build:8": "./node_modules/.bin/redoc-cli bundle ./docs/v1/example8.yml -o ./dist/index8.html"
+  },
+  "author": "YoshinoriN",
+  "devDependencies": {
+    "redoc-cli": "^0.8.3"
+  },
+  "dependencies": {}
+}
