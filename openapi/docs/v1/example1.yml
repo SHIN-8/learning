@@ -1,0 +1,34 @@
+openapi: 3.0.2
+info:
+  title: Liquors Store API
+  description: サンプルAPI
+  version: 1.0.0
+servers:
+- url: /
+paths:
+  /liquors/{liquorId}:
+    get:
+      summary: 指定されたidのお酒を取得します
+      parameters:
+      - name: liquorId
+        in: path
+        description: 取得したいお酒のID
+        required: true
+        schema:
+          type: integer
+          format: int32
+      responses:
+        200:
+          description: 成功時のレスポンス
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                    format: int32
+                  name:
+                    type: string
+                    example: ビール
+components: {}
